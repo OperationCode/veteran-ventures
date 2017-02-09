@@ -8,9 +8,11 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
             crossorigin="anonymous">
+    <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 </head>
 
 <body>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -26,7 +28,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#team">About</a></li>
+            <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -42,26 +44,27 @@
             </div>
         </div>
         <div id="resources">
-            <h1>Resources</h1>
+            <h1 class="page-header">Resources</h1>
             <div class="row">List of resources..</div>
         </div>
         <div id="team">
-            <h1>The Team</h1>
+            <h1 class="page-header">The Team</h1>
             <div class="row">
-                <img src="img/banner.png" alt="Operation Code: Hampton Roads" class="img-responsive center-block" />
-            </div>
-            <div class="row">
-                <p>This project is developed and maintained by the all volunteer community Operation Code: Hampton Roads community which operates with the following goals:</p>
-                <ul>
-                    <li>Community Growth</li>
-                    <li>Learning and Mentorship</li>
-                    <li>Software Development Team Development</li>
-                    <li>Open Source Development</li>
-                </ul>
+                <div class="well">
+                    <img src="img/banner.png" alt="Operation Code: Hampton Roads" class="img-responsive center-block" />
+                    <h3>This project is developed and maintained by the all volunteer community Operation Code: Hampton Roads community which operates with the following goals:</h3>
+                    <h4 class="text-center">
+                        <span class="label label-info">Community Growth</span>
+                        <span class="label label-info">Learning and Mentorship</span>
+                        <span class="label label-info">Software Development Team Development</span>
+                        <span class="label label-info">Open Source Development</span>
+                    </h4>
+                </div>
+                
             </div>
         </div>
         <div id="contact">
-            <h1>Contact Us</h1>
+            <h1 class="page-header">Contact Us</h1>
         </div>
     </div>
     
@@ -71,4 +74,5 @@
             crossorigin="anonymous"></script>
     
 </body>
+
 </html>
