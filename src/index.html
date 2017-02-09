@@ -3,22 +3,72 @@
 
 <head>
     <title>Veteran Ventures</title>
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+            crossorigin="anonymous">
 </head>
 
-<body class="landing-page">
-    <h1>Veteran Ventures</h1>
-    <p>There are plenty of resources for active-duty military and veterans that are available, but sometimes they are hard to
-        find. Let's make a tool that will help us find those resources.</p>
-    <div class="meetup-card">
-        <img src="img/banner.png" alt="Operation Code: Hampton Roads">
-        <ul>
-            <li>Community Growth</li>
-            <li>Learning and Mentorship</li>
-            <li>Software Development Team Skills</li>
-            <li>Open Source</li>
-        </ul>
-    </div>
-</body>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Veteran Ventures</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
+    <div class="container">
+        <div id="about">
+            <div class="jumbotron">
+                <h1>Ease Your Venture</h1>
+                <p>There are plenty of resources for active-duty military and veterans that are available, but sometimes they are hard to
+                    find. Let's make a tool that will help us find those resources.</p>
+            </div>
+        </div>
+        <div id="resources">
+            <h1>Resources</h1>
+            <div class="row">List of resources..</div>
+        </div>
+        <div id="team">
+            <h1>The Team</h1>
+            <div class="row">
+                <img src="img/banner.png" alt="Operation Code: Hampton Roads" class="img-responsive center-block" />
+            </div>
+            <div class="row">
+                <p>This project is developed and maintained by the all volunteer community Operation Code: Hampton Roads community which operates with the following goals:</p>
+                <ul>
+                    <li>Community Growth</li>
+                    <li>Learning and Mentorship</li>
+                    <li>Software Development Team Development</li>
+                    <li>Open Source Development</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>
+    
+</body>
 </html>
