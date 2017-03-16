@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+ <body>
+     <p>Example 4: Javascript Expressions</p>
+     <p><a href="./javascript-home.html">Back to Meetup 2 Page</a></p>
+     <p><a href="./javascript-5.html">Go to Next Example</a></p>
+	 <p><a href="https://www.w3schools.com/js/js_syntax.asp">Go to W3 Schools JS Syntax Page</a></p>
+ </body>
+ <script>
+	// This statement is an expression
+	// Expression: 	some pieces of data that evaluate to some new piece of data
+	// Syntax:		data operator data;
+	1 + 2;
+
+	// This statement assigns the result of an expression to a newly declared variable: 
+	// Assignment: 	saving a piece of data to a variable
+	// Syntax:  	var leftOperandName = data operator data;
+	var x = 1 + 2;
+	
+	// The variable x now contains the value 3.
+	console.log(x);
+	
+	// These statements assign numbers to variables a and b.
+	// Those are then used in an expression.
+	// The result of the expression is assigned to c.
+	var a = 2;
+	var b = 3;
+	var c = a + b;
+	console.log(c);
+	
+	// What happens if you try to user an undefined variable in an expression?
+	var d = a + e;
+	
+	//This line doesn't get executed.
+	console.log("this is not fun anymore");
+ </script>
+ <script>
+	//Browsers execute scripts in order
+	console.log("ok fun again");
+	
+	var f = 2;
+	var g = 3;
+	var h = f * g;
+	console.log(h);
+	
+	//This statement is a boolean expression.
+	//The expression on the right results in true or false depending on the value of the variables.
+	var multiplicationMakesBiggerNumber = h > c;
+	console.log(multiplicationMakesBiggerNumber);
+ </script>
+</html>

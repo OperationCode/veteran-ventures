@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+ <body>
+     <p>Example 3: Javascript Variables and Assignment</p>
+     <p><a href="./javascript-home.html">Back to Meetup 2 Page</a></p>
+     <p><a href="./javascript-4.html">Go to Next Example</a></p>
+	 <p><a href="https://www.w3schools.com/js/js_syntax.asp">Go to W3 Schools JS Syntax Page</a></p>
+ </body>
+ <script>
+	//This statement is a declaration.
+	//Declaration: 	creating space to store a piece of information
+	//Syntax:		var leftOperandName;
+	var x;
+		
+	//This statement is an assignment.: 
+	//Assignment: 	saving a piece of data to a variable
+	//Syntax:  		leftOperandName = rightOperandName;
+	x = 1;
+	
+	//The variable x now contains the value 1. Printing it to the console reflects that.
+	console.log(x);
+	
+	//What happens if you declare a variable but dont assign anything and log it?
+	var y;	
+	console.log(y);
+	
+	//What happens if you try to use something that hasn't been declared?
+	console.log(z);
+	
+	//This line doesn't get executed.
+	console.log("this is fun");
+ </script>
+ <script>
+	//Browsers execute scripts in order
+	console.log("this is more fun");
+	
+	//The variable is stored in memory in the browser *globally* for this page.
+	//All scripts within this page will be able to see variables defined within this page.
+	console.log(x);
+ </script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+ <body>
+     <p>Example 5: Javascript Functions</p>
+     <p><a href="./javascript-home.html">Back to Meetup 2 Page</a></p>
+	 <p><a href="https://www.w3schools.com/js/js_syntax.asp">Go to W3 Schools JS Syntax Page</a></p>
+     <p>Text from input: <span id="submittedText"></span>
+     <form action="">
+         <input id="textInput1" type="text">
+         <button onclick="return buttonclicked()" type="button">Submit</button>
+     </form>
+ </body>
+ <script>
+    
+    console.log("before the function");
+
+    //Declares a function.
+    //A function is a list of statements that can be executed by calling the function.
+    //Syntax: function nameOfFunction() { statement1; statement2; }
+    function printSomeStuff() {
+        console.log("inside the function now");
+        var a = 1;
+        var b = 2;
+        var c = a + b;
+        console.log("c: " + c);
+    }
+
+    console.log("After the function. Before print call");
+
+    //Executes the function
+    //Syntax: functionName();
+    printSomeStuff();
+
+    console.log("After the print call");
+
+    //Declaring a function that accepts a variable
+    //Syntax: function nameOfFunction(nameOfVariable) { statement1; statement2; }
+    function printName(name) {
+        console.log("Hello " + name);
+        console.log("Have you learned a lot today?");
+    }
+
+    console.log("Calling printName");
+    
+    var nameOfMeetup = "Operation Code Hampton Roads";
+
+    //Executing a function that accepts a variable
+    //Syntax: functionName(nameOfVariable)
+    printName(nameOfMeetup);
+
+    function buttonclicked() {
+        var textInput = document.getElementById("textInput1");
+        var spanOutput = document.getElementById("submittedText");
+        spanOutput.innerHTML = textInput.value;
+        return false; // prevents form from resetting
+    }
+ </script>
+</html>
